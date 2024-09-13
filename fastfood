@@ -1,1 +1,125 @@
+Map<String, int> menu = {
+  'Pepsi 1.5l': 19000,
+  'Coca Cola 1.5l': 19000,
+  'Lavashlar juftligi': 90000,
+  'joja boks': 32000,
+  'chizburger': 27000,
+  'kofe 0.3l': 8000,
+  'desert': 16000,
+  'tandir lavash': 37000,
+  'pitsa': 105000,
+  'non': 3000,
+  'ket chup': 4000,
+  'sir': 3000,
+  'salat': 31000,
+  'sendvich': 36000,
+  'xot-dog': 25000
+};
+List xisob = [];
+List zakaz = [];
+void buyurtmalar({
+  String? pepsi,
+  String? cola,
+  String? lavashlar,
+  String? joja,
+  String? chizburger,
+  String? kofe,
+  String? desert,
+  String? tandir,
+  String? pitsa,
+  String? non,
+  String? ket_chup,
+  String? sir,
+  String? salat,
+  String? sendvich,
+  String? xot_dog,
+}) {
+  if (pepsi != null) {
+    xisob.add(pepsi);
+    zakaz.add(menu["Pepsi 1.5l"].toString());
+  }
+  if (cola != null) {
+    xisob.add(cola);
+    zakaz.add(menu['Coca Cola 1.5l'].toString());
+  }
+  if (lavashlar != null) {
+    xisob.add(lavashlar);
+    zakaz.add(menu['Lavashlar juftligi'].toString());
+  }
+  if (joja != null) {
+    xisob.add(joja);
+    zakaz.add(menu['joja boks'].toString());
+  }
+  if (chizburger != null) {
+    xisob.add(chizburger);
+    zakaz.add(menu['chizburger'].toString());
+  }
+  if (kofe != null) {
+    xisob.add(kofe);
+    zakaz.add(menu['kofe 0.3l'].toString());
+  }
+  if (desert != null) {
+    xisob.add(desert);
+    zakaz.add(menu['desert'].toString());
+  }
+  if (tandir != null) {
+    xisob.add(tandir);
+    zakaz.add(menu['tandir lavash'].toString());
+  }
+  if (pitsa != null) {
+    xisob.add(pitsa);
+    zakaz.add(menu['pitsa'].toString());
+  }
+  if (non != null) {
+    xisob.add(non);
+    zakaz.add(menu['non'].toString());
+  }
+  if (ket_chup != null) {
+    xisob.add(ket_chup);
+    zakaz.add(menu['ket chup'].toString());
+  }
+  if (sir != null) {
+    xisob.add(sir);
+    zakaz.add(menu['sir'].toString());
+  }
+  if (salat != null) {
+    xisob.add(salat);
+    zakaz.add(menu['salat'].toString());
+  }
+  if (sendvich != null) {
+    xisob.add(sendvich);
+    zakaz.add(menu['sendvich'].toString());
+  }
+  if (xot_dog != null) {
+    xisob.add(xot_dog);
+    zakaz.add(menu['xot-dog'].toString());
+  }
+  print(xisob);
+  print(zakaz);
+}
 
+// void narxlar({required String str}){
+//   if (str==) {
+
+//   }
+// }
+
+void main(List<String> args) {
+  buyurtmalar(
+    pepsi: 'Pepsi 1,5l',
+    cola: 'Coca Cola',
+    lavashlar: 'Lavashlar juftligi',
+    joja: 'joja boks',
+    chizburger: 'chizburger',
+    kofe: 'kofe 0.3l',
+    desert: 'desert',
+    tandir: 'tandir lavash',
+    pitsa: 'pitsa',
+    non: 'non',
+    ket_chup: 'ket-chup',
+    sir: 'sir',
+    salat: 'salat',
+    sendvich: 'sendvich',
+    xot_dog: 'xot-dog',
+  );
+}
